@@ -1,14 +1,13 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.omnikingnile.tvstream'
+    namespace 'com.example.omnikingnile'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.omnikingnile.tvstream"
+        applicationId "com.example.omnikingnile"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -16,22 +15,13 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+    implementation 'com.google.android.material:material:1.11.0'
 }
